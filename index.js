@@ -68,7 +68,8 @@ const displayQuiz = (data) => {
       <p class="text-gray-800 text-sm">${quiz.question}</p>
     </div>
     <div class="grid grid-cols-2 gap-4 mt-5">
-      ${displayQuiz(quiz.options, i)}
+    <ol class="list-group">${quiz.options}
+    </ol>
     </div>
   </div>`;
   // QuizContain.appendChild(quizContainer);
@@ -190,3 +191,9 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+
+const redirectToBlog=()=>{
+  window.location.href="blog.html";
+}
