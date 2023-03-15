@@ -68,8 +68,8 @@ const displayQuiz = (data) => {
       <p class="text-gray-800 text-sm">${quiz.question}</p>
     </div>
     <div class="grid grid-cols-2 gap-4 mt-5">
-    <ol class="list-group">${quiz.options}
-    </ol>
+    ${displayQuizOptions(quiz.options)}
+    
     </div>
   </div>`;
   // QuizContain.appendChild(quizContainer);
