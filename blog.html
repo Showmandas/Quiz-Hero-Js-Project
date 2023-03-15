@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Blog Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   </head>
   <body>
@@ -27,6 +27,17 @@
         <p>
             <span class="fw-bold text-success">cookies :</span>It's manually set on the browser.It's storage capacity is 4kb.It will be sent from the server.It stores data in both browser and server. 
         </p>
+    </div><!--/col-->
+    <div class="col-12 mt-4">
+        <h4>What is event loop and how does it work?</h4>
+        <p>We know that Javascript is a synchronus and single threaded language.It executes the line of code one at a time or line by line serially.But in some scenarios it behaves as an asynchronus.If we see as an example of timer or setInterval,setTimeOut funtion,these are works as .In this situation this mechanism handle this.It manages the cycle of callback function from the queue to the call stack.<br>
+        A call stack will be empty for bringing anything in it for event loop.When the call stack  is empty,the first unit will be entered to the queue to bring to the call stack by the event loop</p>
+    </div><!--/col-->
+    <div class="col-12">
+        <h4>What is the function of quizTimer function?</h4>
+        <p>This function is used as a timer set for the quiz and handle the timer.This time show how much time you consumed when you answered the quiz.When this time is exceed 60 sec then the time will be turned into red color.</p>
+        <h4>What is the function of chooseQuiz function?</h4>
+        <p>This function is used for selection of options of quiz.This function is for when user select options for quiz then it will be worked.</p>
     </div><!--/col-->
 </div><!--/row-->
     </div><!--/container-->
