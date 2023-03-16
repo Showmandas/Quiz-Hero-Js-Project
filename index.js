@@ -80,7 +80,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     return;
   }
   quizTimer(true);
-  answersContainer.innerHTML = `<div class="my-4">
+  answersContainer.innerHTML += `<div class="my-4">
   <i class="fa-solid fa-fan animate-spin text-2xl text-green-600"></i>
   <p class="text-xs animate-pulse">Please Wait, We are checking...</p>
 </div>`;
