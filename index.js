@@ -68,7 +68,7 @@ const displayQuiz = (data) => {
     <p class="text-gray-800 text-sm">${quiz.question}</p>
   </div>
   <div class="grid grid-cols-2 gap-4 mt-5">
-    ${displayQuizOptions(quiz.options,i)}
+    ${displayQuizOptions(quiz.options, i)}
   </div>
 </div>`;
   });
@@ -90,13 +90,13 @@ document.querySelector("#submit").addEventListener("click", () => {
     status: "",
     color: "",
   };
-  
+
   for (let ans of answers) {
     if (ans.answer === ans.givenAns) {
       totalMark += 10;
     }
   }
-  
+
   if (totalMark === 60) {
     grade.status = "Excellent";
     grade.color = "text-green-600";
@@ -107,7 +107,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     grade.status = "Poor";
     grade.color = "text-red-600";
   }
-  
+
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("results"));
   if (storage) {
@@ -134,8 +134,7 @@ document.querySelector("#submit").addEventListener("click", () => {
       ])
     );
   }
-  
-  
+
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
@@ -180,8 +179,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }
   </div>
   `;
-  
-  clearTimeout(x);
-}, 1500);
-window.scrollTo(0, 0);
+
+    clearTimeout(x);
+  }, 1500);
+  window.scrollTo(0, 0);
 });
